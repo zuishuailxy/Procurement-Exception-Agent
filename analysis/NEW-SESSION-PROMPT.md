@@ -1,6 +1,6 @@
 # 交接提示词 v2：完成 PEC 采购异常处置 Agent 全部交付物
 
-> 目标：在 **2026-11-08 15:00（Asia/Shanghai）前**完成《业务案例实测任务书-候选人版-v3.1》全部交付物，在 Mac 上打包提交。用户只在最后验收；中途不要反复确认，按本文件自主推进，遇到真正阻塞再问。
+> 目标：在 **2026-11-08 15:00（Asia/Shanghai）前**完成《业务案例实测任务书-候选人版-v3.1》全部交付物，在 Mac 上打包提交。**每完成 `todo.md` 里的一个条目，必须停下来向用户汇报并等确认**（用户要能理解改了什么）；不要一次性连做多块。
 >
 > 本会话是**第一天**的 AI 会话记录（要导出成交付物）；上一轮讨论会话不计入。
 
@@ -10,7 +10,28 @@
 2. 写 `pec-agent/plan.md`：目标、架构、模块边界、每个模块的 spec（输入/输出/错误/验收标准/测试向量）、数据口径与假设、风险、时间排期。
 3. 写 `pec-agent/todo.md`：按依赖排序的任务，每项含「完成定义 + 验证命令」。
 4. 再实现：**每个模块先写 spec/测试向量，再写代码，再验证**；一块一验。
-5. 每完成一块更新 `todo.md`；每天收工在 `pec-agent` 仓库打 tag（`d1` / `d2`）。
+5. 每完成一块更新 `todo.md`，**按 §0.1 模板向用户汇报并等确认**；每天收工在 `pec-agent` 仓库打 tag（`d1` / `d2`）。
+
+## 0.1 每个 todo 完成后的确认流程（必须遵守）
+
+每完成 `todo.md` 里的一个条目，**停下来**，按下面模板向用户汇报，等用户确认后再做下一项；禁止连续做多个条目、禁止“等最后一起汇报”。
+
+汇报模板（每条都要写，用户要用它理解改动）：
+
+1. **完成项**：`todo.md` 第 N 项「…」；对应题面/验收项（R1–R14、六项指标、§8.3 第几条）。
+2. **改了什么（文件级）**：
+   - `路径/文件.ts`：新增/修改了什么（一句话）+ 关键行为变化；
+   - 有 schema/配置/接口变化时贴最小 diff 或函数签名；
+   - 如新增文件，说明它在架构里的位置。
+3. **为什么这么改**：对应哪条业务规则/评测指标；有没有替代方案、为什么没选。
+4. **怎么验证**：执行的命令 + 关键输出（3–10 行），说明 PASS/FAIL；如果是 headless 跑，贴 `tool_call` / `final` 的关键片段。
+5. **对六项指标的影响**：准确率 / 引用可溯 / 记忆命中 / 技能复用 / 提效 / 越权拦截，哪一项受影响、当前证据是什么。
+6. **风险、假设、未决项**：题面缺口、口径冲突、需要用户拍板的地方。
+7. **下一步**：`todo.md` 下一项是什么、预计耗时。
+
+用户确认方式：回复「继续」/「改…」/「先解释…」。**未确认前不要开始下一项**；用户不在线就把汇报留在会话里等回复，不要自行推进。
+
+同时更新：`todo.md` 勾选状态；影响交付口径的写进 `CHANGELOG.md`；必要时在 `design.md` 补决策记录。
 
 ## 1. 目录与仓库
 
@@ -44,6 +65,7 @@
 ## 3. 已完成（不要重做，除非测试证明有问题）
 
 ### 3.1 环境/脚手架修复（记入 CHANGELOG）
+
 1. `output.schema` 在 0.2.1 必须显式 `additionalProperties: true/false`，否则插件导入失败。
 2. 插件入口必须 `export const inject = ['tools']`，否则 cordis 4 报 “cannot get property tools without inject”。
 3. guard 真实签名是 `(exec) => string | undefined`（返回字符串即拒绝）；题面 `(call, next) => ({deny})` 在 0.2.1 上会抛错。
@@ -54,6 +76,7 @@
 8. 本机 macOS 27.3 上 `workspace-write` bash 沙箱不可用；PEC agent 已用工具面收紧规避，不依赖 shell。
 
 ### 3.2 已实现并验证
+
 - `policy/identity.ts`：`PEC_USER_ID` → `users` 表解析 tenantId/role（进程可信输入，模型不可伪造；缺省 U-07）
 - `policy/audit.ts`：JSONL 审计（`PEC_AUDIT_PATH`，默认 `./runs/audit.jsonl`）
 - `policy/guard.ts`：同步 guard，拦截伪造 `tenantId` 参数并留痕
@@ -68,6 +91,7 @@
 - 接线完成：`tools/business.ts` re-export 新工具；`index.ts` 注册 catalog + 6 工具；`lib/` 已重编译
 
 ### 3.3 工具命名映射（题面名 → 实现名）
+
 ```
 pec.data.catalog → pec_data_catalog
 order.lookup     → order_lookup
@@ -77,9 +101,11 @@ freight.calc     → freight_calc
 contract.search  → contract_search
 ticket.similar   → ticket_similar
 ```
+
 新增工具一律下划线：`advice_card`、`memory_recall`、`memory_remember`、`memory_forget`、`skill_write`。
 
 ### 3.4 已验证的证据
+
 - `node dev/test-tools.mjs`：**19 passed / 0 failed**
 - catalog：6 张表行数；headless 1 次 `tool_call`、`step_end.usage` 有 token
 - order_lookup：0042 延迟 13 天 + provenance；端到端 `final` 带 `[来源: orders#PO-20261013-0042]`
@@ -172,7 +198,7 @@ pec-agent/
 1. 读 `analysis/taskbook.txt`、`analysis/dsh-api-notes.md`、`analysis/data-audit.md` 和现有源码。
 2. 跑基线验证：`./dev/build.sh && node dev/test-tools.mjs` + 一次 headless `order_lookup`。
 3. 写 `plan.md` 和 `todo.md`（先落盘，不要等用户回复）。
-4. 从“待完成”第 2 项开始按 SDD 推进；每完成一项更新 todo.md 并验证。
+4. 从“待完成”第 2 项开始按 SDD 推进；每完成一项更新 todo.md、按 §0.1 汇报并等确认。
 
 ## 12. 约束
 
@@ -180,4 +206,5 @@ pec-agent/
 - 不新增运行时依赖（没有 decimal.js），只用 Node 标准库 + better-sqlite3 + dsh-tools。
 - 不修改 `预装环境/`、`实例数据包/` 原件；不把 `.env`、`node_modules`、`.dsh-home` 提交/打包。
 - 每完成一块立即验证；不要攒到最后。
-- 新会话不要等用户确认才继续；只有真正阻塞（环境/凭据/需求歧义）才问。
+- 每完成一个 todo 必须按 §0.1 向用户汇报并等确认；只有用户明确说“继续下一项/不必逐步确认”才可连续推进。
+- **不要创建 goal、不要用自动续跑/自动继续**：那会绕过“每个 todo 等确认”的约定；一个 todo 结束就结束当前回合，等用户回复。
