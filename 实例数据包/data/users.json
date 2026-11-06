@@ -1,0 +1,67 @@
+[
+  {
+    "id": "U-01",
+    "tenant_id": "T-001",
+    "name": "陈志远",
+    "role": "admin",
+    "focus_categories": []
+  },
+  {
+    "id": "U-02",
+    "tenant_id": "T-001",
+    "name": "李敏",
+    "role": "buyer",
+    "focus_categories": [
+      "液压件"
+    ]
+  },
+  {
+    "id": "U-03",
+    "tenant_id": "T-001",
+    "name": "王强",
+    "role": "manager",
+    "focus_categories": [
+      "传动件"
+    ]
+  },
+  {
+    "id": "U-04",
+    "tenant_id": "T-001",
+    "name": "赵静",
+    "role": "finance",
+    "focus_categories": []
+  },
+  {
+    "id": "U-05",
+    "tenant_id": "T-001",
+    "name": "周涛",
+    "role": "risk",
+    "focus_categories": []
+  },
+  {
+    "id": "U-06",
+    "tenant_id": "T-001",
+    "name": "孙丽",
+    "role": "auditor",
+    "focus_categories": []
+  },
+  {
+    "id": "U-07",
+    "tenant_id": "T-001",
+    "name": "吴昊",
+    "role": "buyer",
+    "focus_categories": [
+      "液压件",
+      "密封件"
+    ]
+  },
+  {
+    "id": "U-08",
+    "tenant_id": "T-002",
+    "name": "郑楠",
+    "role": "buyer",
+    "focus_categories": [
+      "进口件"
+    ]
+  }
+]

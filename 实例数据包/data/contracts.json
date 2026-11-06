@@ -1,0 +1,324 @@
+[
+  {
+    "clause_no": "CL-01",
+    "supplier_id": "SUP-1041",
+    "type": "penalty",
+    "text": "卖方延迟交货的，每延迟一日按合同金额的 2‰ 支付违约金，累计不超过合同金额的 5%。",
+    "effective_from": "2026-01-01"
+  },
+  {
+    "clause_no": "CL-02",
+    "supplier_id": "SUP-1042",
+    "type": "warranty",
+    "text": "货物质保期为交付之日起 36 个月，质保期内非人为损坏由卖方免费更换。",
+    "effective_from": "2026-01-01"
+  },
+  {
+    "clause_no": "CL-03",
+    "supplier_id": "SUP-1007",
+    "type": "moq",
+    "text": "本协议项下最小起订量为 100 件，低于该数量需双方另行确认。",
+    "effective_from": "2026-01-01"
+  },
+  {
+    "clause_no": "CL-04",
+    "supplier_id": "SUP-1044",
+    "type": "moq",
+    "text": "本协议项下最小起订量为 200 件，低于该数量需双方另行确认。",
+    "effective_from": "2026-01-01"
+  },
+  {
+    "clause_no": "CL-05",
+    "supplier_id": "SUP-1045",
+    "type": "moq",
+    "text": "本协议项下最小起订量为 500 件，低于该数量需双方另行确认。",
+    "effective_from": "2026-01-01"
+  },
+  {
+    "clause_no": "CL-06",
+    "supplier_id": "SUP-1046",
+    "type": "freight",
+    "text": "运输费用由买方承担，计费体积按向上取整的立方尺计算。",
+    "effective_from": "2026-01-01"
+  },
+  {
+    "clause_no": "CL-07",
+    "supplier_id": "SUP-1042",
+    "type": "penalty",
+    "text": "卖方延迟交货的，每延迟一日按合同金额的 3‰ 支付违约金，累计不超过合同金额的 5%。",
+    "effective_from": "2026-01-01"
+  },
+  {
+    "clause_no": "CL-08",
+    "supplier_id": "SUP-1048",
+    "type": "penalty",
+    "text": "卖方延迟交货的，每延迟一日按合同金额的 3‰ 支付违约金，累计不超过合同金额的 5%。",
+    "effective_from": "2026-01-01"
+  },
+  {
+    "clause_no": "CL-09",
+    "supplier_id": "SUP-1049",
+    "type": "payment",
+    "text": "买方应在验收合格后 30 日内支付货款，逾期按日万分之五计息。",
+    "effective_from": "2026-01-01"
+  },
+  {
+    "clause_no": "CL-10",
+    "supplier_id": "SUP-1050",
+    "type": "moq",
+    "text": "本协议项下最小起订量为 200 件，低于该数量需双方另行确认。",
+    "effective_from": "2026-01-01"
+  },
+  {
+    "clause_no": "CL-11",
+    "supplier_id": "SUP-1051",
+    "type": "warranty",
+    "text": "货物质保期为交付之日起 36 个月，质保期内非人为损坏由卖方免费更换。",
+    "effective_from": "2026-01-01"
+  },
+  {
+    "clause_no": "CL-12",
+    "supplier_id": "SUP-1052",
+    "type": "freight",
+    "text": "运输费用由卖方承担，计费体积按向上取整的立方尺计算。",
+    "effective_from": "2026-01-01"
+  },
+  {
+    "clause_no": "CL-13",
+    "supplier_id": "SUP-1053",
+    "type": "warranty",
+    "text": "货物质保期为交付之日起 24 个月，质保期内非人为损坏由卖方免费更换。",
+    "effective_from": "2026-01-01"
+  },
+  {
+    "clause_no": "CL-14",
+    "supplier_id": "SUP-1054",
+    "type": "penalty",
+    "text": "卖方延迟交货的，每延迟一日按合同金额的 3‰ 支付违约金，累计不超过合同金额的 5%。",
+    "effective_from": "2026-01-01"
+  },
+  {
+    "clause_no": "CL-15",
+    "supplier_id": "SUP-1055",
+    "type": "payment",
+    "text": "买方应在验收合格后 60 日内支付货款，逾期按日万分之五计息。",
+    "effective_from": "2026-01-01"
+  },
+  {
+    "clause_no": "CL-16",
+    "supplier_id": "SUP-1056",
+    "type": "warranty",
+    "text": "货物质保期为交付之日起 6 个月，质保期内非人为损坏由卖方免费更换。",
+    "effective_from": "2026-01-01"
+  },
+  {
+    "clause_no": "CL-17",
+    "supplier_id": "SUP-1057",
+    "type": "moq",
+    "text": "本协议项下最小起订量为 500 件，低于该数量需双方另行确认。",
+    "effective_from": "2026-01-01"
+  },
+  {
+    "clause_no": "CL-18",
+    "supplier_id": "SUP-1058",
+    "type": "freight",
+    "text": "运输费用由卖方承担，计费体积按向上取整的立方尺计算。",
+    "effective_from": "2026-01-01"
+  },
+  {
+    "clause_no": "CL-19",
+    "supplier_id": "SUP-1059",
+    "type": "freight",
+    "text": "运输费用由卖方承担，计费体积按向上取整的立方尺计算。",
+    "effective_from": "2026-01-01"
+  },
+  {
+    "clause_no": "CL-20",
+    "supplier_id": "SUP-1060",
+    "type": "payment",
+    "text": "买方应在验收合格后 45 日内支付货款，逾期按日万分之五计息。",
+    "effective_from": "2026-01-01"
+  },
+  {
+    "clause_no": "CL-21",
+    "supplier_id": "SUP-1061",
+    "type": "warranty",
+    "text": "货物质保期为交付之日起 6 个月，质保期内非人为损坏由卖方免费更换。",
+    "effective_from": "2026-01-01"
+  },
+  {
+    "clause_no": "CL-22",
+    "supplier_id": "SUP-1062",
+    "type": "payment",
+    "text": "买方应在验收合格后 45 日内支付货款，逾期按日万分之五计息。",
+    "effective_from": "2026-01-01"
+  },
+  {
+    "clause_no": "CL-23",
+    "supplier_id": "SUP-1063",
+    "type": "moq",
+    "text": "本协议项下最小起订量为 100 件，低于该数量需双方另行确认。",
+    "effective_from": "2026-01-01"
+  },
+  {
+    "clause_no": "CL-24",
+    "supplier_id": "SUP-1064",
+    "type": "penalty",
+    "text": "卖方延迟交货的，每延迟一日按合同金额的 2‰ 支付违约金，累计不超过合同金额的 5%。",
+    "effective_from": "2026-01-01"
+  },
+  {
+    "clause_no": "CL-25",
+    "supplier_id": "SUP-1065",
+    "type": "moq",
+    "text": "本协议项下最小起订量为 200 件，低于该数量需双方另行确认。",
+    "effective_from": "2026-01-01"
+  },
+  {
+    "clause_no": "CL-26",
+    "supplier_id": "SUP-1066",
+    "type": "payment",
+    "text": "买方应在验收合格后 30 日内支付货款，逾期按日万分之五计息。",
+    "effective_from": "2026-01-01"
+  },
+  {
+    "clause_no": "CL-27",
+    "supplier_id": "SUP-1067",
+    "type": "warranty",
+    "text": "货物质保期为交付之日起 36 个月，质保期内非人为损坏由卖方免费更换。",
+    "effective_from": "2026-01-01"
+  },
+  {
+    "clause_no": "CL-28",
+    "supplier_id": "SUP-1068",
+    "type": "penalty",
+    "text": "卖方延迟交货的，每延迟一日按合同金额的 1‰ 支付违约金，累计不超过合同金额的 5%。",
+    "effective_from": "2026-01-01"
+  },
+  {
+    "clause_no": "CL-29",
+    "supplier_id": "SUP-1069",
+    "type": "warranty",
+    "text": "货物质保期为交付之日起 12 个月，质保期内非人为损坏由卖方免费更换。",
+    "effective_from": "2026-01-01"
+  },
+  {
+    "clause_no": "CL-30",
+    "supplier_id": "SUP-1070",
+    "type": "freight",
+    "text": "运输费用由卖方承担，计费体积按向上取整的立方尺计算。",
+    "effective_from": "2026-01-01"
+  },
+  {
+    "clause_no": "CL-31",
+    "supplier_id": "SUP-1071",
+    "type": "payment",
+    "text": "买方应在验收合格后 90 日内支付货款，逾期按日万分之五计息。",
+    "effective_from": "2026-01-01"
+  },
+  {
+    "clause_no": "CL-32",
+    "supplier_id": "SUP-1072",
+    "type": "payment",
+    "text": "买方应在验收合格后 90 日内支付货款，逾期按日万分之五计息。",
+    "effective_from": "2026-01-01"
+  },
+  {
+    "clause_no": "CL-33",
+    "supplier_id": "SUP-1042",
+    "type": "warranty",
+    "text": "货物质保期为交付之日起 6 个月，质保期内非人为损坏由卖方免费更换。",
+    "effective_from": "2026-01-01"
+  },
+  {
+    "clause_no": "CL-34",
+    "supplier_id": "SUP-1061",
+    "type": "freight",
+    "text": "运输费用由卖方承担，计费体积按向上取整的立方尺计算。",
+    "effective_from": "2026-01-01"
+  },
+  {
+    "clause_no": "CL-35",
+    "supplier_id": "SUP-1066",
+    "type": "warranty",
+    "text": "货物质保期为交付之日起 24 个月，质保期内非人为损坏由卖方免费更换。",
+    "effective_from": "2026-01-01"
+  },
+  {
+    "clause_no": "CL-36",
+    "supplier_id": "SUP-1048",
+    "type": "warranty",
+    "text": "货物质保期为交付之日起 6 个月，质保期内非人为损坏由卖方免费更换。",
+    "effective_from": "2026-01-01"
+  },
+  {
+    "clause_no": "CL-37",
+    "supplier_id": "SUP-1061",
+    "type": "penalty",
+    "text": "卖方延迟交货的，每延迟一日按合同金额的 3‰ 支付违约金，累计不超过合同金额的 5%。",
+    "effective_from": "2026-01-01"
+  },
+  {
+    "clause_no": "CL-38",
+    "supplier_id": "SUP-1070",
+    "type": "moq",
+    "text": "本协议项下最小起订量为 100 件，低于该数量需双方另行确认。",
+    "effective_from": "2026-01-01"
+  },
+  {
+    "clause_no": "CL-39",
+    "supplier_id": "SUP-1068",
+    "type": "payment",
+    "text": "买方应在验收合格后 45 日内支付货款，逾期按日万分之五计息。",
+    "effective_from": "2026-01-01"
+  },
+  {
+    "clause_no": "CL-40",
+    "supplier_id": "SUP-1068",
+    "type": "freight",
+    "text": "运输费用由卖方承担，计费体积按向上取整的立方尺计算。",
+    "effective_from": "2026-01-01"
+  },
+  {
+    "clause_no": "CL-41",
+    "supplier_id": "SUP-1046",
+    "type": "warranty",
+    "text": "货物质保期为交付之日起 24 个月，质保期内非人为损坏由卖方免费更换。",
+    "effective_from": "2026-01-01"
+  },
+  {
+    "clause_no": "CL-42",
+    "supplier_id": "SUP-1062",
+    "type": "penalty",
+    "text": "卖方延迟交货的，每延迟一日按合同金额的 2‰ 支付违约金，累计不超过合同金额的 5%。",
+    "effective_from": "2026-01-01"
+  },
+  {
+    "clause_no": "CL-43",
+    "supplier_id": "SUP-1051",
+    "type": "payment",
+    "text": "买方应在验收合格后 30 日内支付货款，逾期按日万分之五计息。",
+    "effective_from": "2026-01-01"
+  },
+  {
+    "clause_no": "CL-44",
+    "supplier_id": "SUP-1053",
+    "type": "moq",
+    "text": "本协议项下最小起订量为 200 件，低于该数量需双方另行确认。",
+    "effective_from": "2026-01-01"
+  },
+  {
+    "clause_no": "CL-45",
+    "supplier_id": "SUP-1050",
+    "type": "penalty",
+    "text": "卖方延迟交货的，每延迟一日按合同金额的 1‰ 支付违约金，累计不超过合同金额的 5%。",
+    "effective_from": "2026-01-01"
+  },
+  {
+    "clause_no": "CL-46",
+    "supplier_id": "SUP-1050",
+    "type": "moq",
+    "text": "本协议项下最小起订量为 100 件，低于该数量需双方另行确认。",
+    "effective_from": "2026-01-01"
+  }
+]
