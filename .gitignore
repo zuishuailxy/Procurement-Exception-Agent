@@ -3,4 +3,5 @@ node_modules/
 .pnpm-store/
 *.log
 ~$*
+*.zip
 pec-agent/
